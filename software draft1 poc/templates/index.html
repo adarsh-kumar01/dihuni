@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Image Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Select Docker Image</h1>
+    <form action="/submit" method="post">
+        <label for="deep_learning_framework">Deep Learning Framework:</label>
+        <select id="deep_learning_framework" name="deep_learning_framework">
+            <option value="pytorch">PyTorch</option>
+            <option value="tensorflow">TensorFlow</option>
+        </select><br><br>
+
+        <label for="os_version">OS Version:</label>
+        <select id="os_version" name="os_version">
+            <option value="22.04">Ubuntu 22.04</option>
+            <option value="20.04">Ubuntu 20.04</option>
+        </select><br><br>
+
+        <label for="interface">Interface:</label>
+        <select id="interface" name="interface">
+            <option value="jupyter_lab">Jupyter Lab</option>
+            <option value="vscode">VSCode</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
